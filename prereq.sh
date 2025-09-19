@@ -239,7 +239,7 @@ if [[ "$OS_ID" == "ubuntu" ]]; then
     echo "Installing apt packages for - $OS_ID"
     apt update
     apt install python$python_version-dev python$python_version-venv -y $allow_unauth_apt
-    apt install git git-lfs jq -y $allow_unauth_apt
+    apt install git git-lfs jq iptables -y $allow_unauth_apt
     git lfs pull
 else
     echo "Installing dnf packages for - $OS_ID"
